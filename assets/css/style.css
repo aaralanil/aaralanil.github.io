@@ -3,19 +3,85 @@
 	padding: 0;
 }
 
+.element-style {
+    position: fixed; /* Makes it stay in place even if the page scrolls */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background: url("../assets/img/cardboard_texture.png");
+    background-size: cover; /* Ensures the image covers the whole div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    z-index: -1; /* Sends it behind other elements */
+
+}
+
 body{
 	font-family: "CompagnonLight";
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Ensure no scrollbars appear */
 }
 
-.container{
-
+.image-container {
+    position: relative; /* Needed for positioning child images */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
 }
 
-.p {
-   text-justify: center;
-
+.image-container img {
+    position: absolute; /* Allows positioning anywhere inside the container */
+    width: 200px; /* Adjust size */
+    height: auto; /* Maintain aspect ratio */
 }
 
-.item{
+/* Random positions for each image */
+.image-container img:nth-child(1) {
+    top: 10%;
+    left: 20%;
+    transform: rotate(-10deg);
+}
+
+.image-container img:nth-child(2) {
+    top: 50%;
+    left: 40%;
+    transform: rotate(15deg);
+}
+
+.image-container img:nth-child(3) {
+    top: 30%;
+    left: 70%;
+    transform: rotate(-5deg);
+}
+
+.image-container img:nth-child(4) {
+    top: 70%;
+    left: 10%;
+    transform: rotate(20deg);
+}
+
+.image-container img:nth-child(5) {
+    top: 80%;
+    left: 10%;
+    transform: rotate(20deg);
+}
 	
+.image-container img:nth-child(6) {
+    top: 10%;
+    left: 50%;
+    transform: rotate(20deg);
+}
+
+.image-container img:nth-child(7) {
+    top: 90%;
+    left: 50%;
+    transform: rotate(20deg);
+}
+
+.image-container img:nth-child(8) {
+    top: 50%;
+    left: 80%;
+    transform: rotate(20deg);
+
 }
