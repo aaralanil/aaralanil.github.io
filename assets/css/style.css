@@ -85,3 +85,15 @@ body{
     transform: rotate(20deg);
 
 }
+
+.image-container img:nth-child(9) {
+    top: 10%;
+    left: 50%;
+    transform: rotate(20deg);
+
+}
+
+.image-container img:nth-child(10) {
+    top: 20%;
+    left: 40%;
+    transform: rotate(20deg);
