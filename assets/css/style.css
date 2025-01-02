@@ -33,6 +33,7 @@ body {
     position: absolute; /* Allows positioning anywhere inside the container */
     width: 200px; /* Adjust size */
     height: auto; /* Maintain aspect ratio */
+
 }
 
 /* Random positions for each image */
@@ -54,7 +55,17 @@ body {
 .image-container img:nth-child(16) { top: 25%; left: 35%; transform: rotate(10deg); }
 .image-container img:nth-child(17) { top: 65%; left: 5%; transform: rotate(25deg); }
 .image-container img:nth-child(18) { top: 35%; left: 90%; transform: rotate(-30deg); }
-.image-container img:nth-child(19) { top: 75%; left: 50%; transform: rotate(15deg); }
+.image-container img:nth-child(19) { top: 75%; left: 50%; transform: rotate(12deg); }
 .image-container img:nth-child(20) { top: 10%; left: 70%; transform: rotate(-20deg); }
+/* ... continuing with previous pattern ... */
+.image-container img:nth-child(93) { top: 45%; left: 25%; transform: rotate(8deg); }
+.image-container img:nth-child(94) { top: 82%; left: 68%; transform: rotate(-12deg); }
+.image-container img:nth-child(95) { top: 15%; left: 92%; transform: rotate(18deg); }
+
+.image-container img:hover {
+    transform: scale(1.2) rotate(0deg);
+    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
+
 
