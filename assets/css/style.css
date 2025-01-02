@@ -1,6 +1,13 @@
-*{
-	margin: 0;
-	padding: 0;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Ensure no scrollbars appear */
+    font-family: "CompagnonLight"; /* Set your font */
 }
 
 .element-style {
@@ -9,19 +16,11 @@
     left: 0;
     width: 100vw; /* Full viewport width */
     height: 100vh; /* Full viewport height */
-    background: url("../assets/img/cardboard_texture.png");
-    background-size: cover; /* Ensures the image covers the whole div */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents tiling */
+    background: url("../assets/img/cardboard_texture.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     z-index: -1; /* Sends it behind other elements */
-
-}
-
-body{
-	font-family: "CompagnonLight";
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* Ensure no scrollbars appear */
 }
 
 .image-container {
@@ -37,63 +36,25 @@ body{
 }
 
 /* Random positions for each image */
-.image-container img:nth-child(1) {
-    top: 10%;
-    left: 20%;
-    transform: rotate(-10deg);
+.image-container img:nth-child(1) { top: 10%; left: 20%; transform: rotate(-10deg); }
+.image-container img:nth-child(2) { top: 50%; left: 40%; transform: rotate(15deg); }
+.image-container img:nth-child(3) { top: 30%; left: 70%; transform: rotate(-5deg); }
+.image-container img:nth-child(4) { top: 70%; left: 10%; transform: rotate(20deg); }
+.image-container img:nth-child(5) { top: 80%; left: 15%; transform: rotate(-15deg); }
+.image-container img:nth-child(6) { top: 5%; left: 50%; transform: rotate(10deg); }
+.image-container img:nth-child(7) { top: 90%; left: 45%; transform: rotate(-20deg); }
+.image-container img:nth-child(8) { top: 50%; left: 80%; transform: rotate(25deg); }
+.image-container img:nth-child(9) { top: 20%; left: 60%; transform: rotate(-10deg); }
+.image-container img:nth-child(10) { top: 60%; left: 30%; transform: rotate(30deg); }
+.image-container img:nth-child(11) { top: 40%; left: 10%; transform: rotate(-25deg); }
+.image-container img:nth-child(12) { top: 70%; left: 75%; transform: rotate(15deg); }
+.image-container img:nth-child(13) { top: 15%; left: 85%; transform: rotate(-5deg); }
+.image-container img:nth-child(14) { top: 5%; left: 15%; transform: rotate(20deg); }
+.image-container img:nth-child(15) { top: 85%; left: 60%; transform: rotate(-15deg); }
+.image-container img:nth-child(16) { top: 25%; left: 35%; transform: rotate(10deg); }
+.image-container img:nth-child(17) { top: 65%; left: 5%; transform: rotate(25deg); }
+.image-container img:nth-child(18) { top: 35%; left: 90%; transform: rotate(-30deg); }
+.image-container img:nth-child(19) { top: 75%; left: 50%; transform: rotate(15deg); }
+.image-container img:nth-child(20) { top: 10%; left: 70%; transform: rotate(-20deg); }
 }
 
-.image-container img:nth-child(2) {
-    top: 50%;
-    left: 40%;
-    transform: rotate(15deg);
-}
-
-.image-container img:nth-child(3) {
-    top: 30%;
-    left: 70%;
-    transform: rotate(-5deg);
-}
-
-.image-container img:nth-child(4) {
-    top: 70%;
-    left: 10%;
-    transform: rotate(20deg);
-}
-
-.image-container img:nth-child(5) {
-    top: 80%;
-    left: 10%;
-    transform: rotate(20deg);
-}
-	
-.image-container img:nth-child(6) {
-    top: 10%;
-    left: 50%;
-    transform: rotate(20deg);
-}
-
-.image-container img:nth-child(7) {
-    top: 90%;
-    left: 50%;
-    transform: rotate(20deg);
-}
-
-.image-container img:nth-child(8) {
-    top: 50%;
-    left: 80%;
-    transform: rotate(20deg);
-
-}
-
-.image-container img:nth-child(9) {
-    top: 10%;
-    left: 50%;
-    transform: rotate(20deg);
-
-}
-
-.image-container img:nth-child(10) {
-    top: 20%;
-    left: 40%;
-    transform: rotate(20deg);
