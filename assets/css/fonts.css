@@ -5,3 +5,19 @@
   font-weight:200;
   font-style:normal;
 }
+
+
+@font-face {
+  font-family: LouiseRegular;
+  src:url(../fonts/Louise-Regular.woff2) format("woff2"),
+  font-weight:200;
+  font-style:normal;
+}
+
+@font-face {
+  font-family: Director;
+  src:url(../fonts/Director-Regular.woff) format("woff");
+  src:url(../fonts/Director-Regular.woff2) format("woff2");
+  src:url(../fonts/Director-Light.woff) format("woff");
+  src:url(../fonts/Director-Light.woff2) format("woff2");
+}
