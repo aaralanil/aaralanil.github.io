@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,47 @@
     <link rel="stylesheet" href="assets/css/style.css">
 	<title>shoebox memories</title>
 </head>
+<style>
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
 
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90vh;
+            object-fit: contain;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
+        .close-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.5);
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            text-decoration: none;
+        }
+    </style>
 <body>
 	<header>
 		<div class="tophead">
@@ -16,18 +55,17 @@
 		<a href="#">archive</a> 
 		<a href="#">about</a>
 	</div>
-
+</header>
 	<div> 
 		<h1>shoebox memories</h1>
 		<p> welcome to my webpage, a place for all trinkets, love letters, and memories collected in a shoebox somewhere in my room. maybe you have your own too. 
 		</p>
 	</div>
 
-	</header>
+<div class="element-style"></div>
 
-<div class="element-style">
     <div class="image-container">
-		<img src="../assets/img/probe2.png" alt= "rat says please be nice">
+    	<img src="../assets/img/probe2.png" alt= "rat says please be nice">
 		<img src="../assets/img/probe3.png" alt= "no chichi no problem">
 		<img src="../assets/img/probe4.png" alt= "jenny y yop">
 		<img src="../assets/img/probe5.png" alt= "deathmetal">
@@ -111,10 +149,56 @@
 		<img src="../assets/img/shoebox33.1.png" alt= "moose mail"> <img src="../assets/img/shoebox33.0.png" alt= "moose mail 2">
 		<img src="../assets/img/shoebox35.png" alt= "mami"> <img src="../assets/img/shoebox35.1.png" alt= "mami 2">
 		<img src="../assets/img/shoebox36.png" alt= "teletummies"> <img src="../assets/img/shoebox38.1.png" alt= "teletummies 2"> <img src="../assets/img/shoebox38.2.png" alt= "teletummies stickers">
-		<img src="../assets/img/shoebox42.png" alt= "sobre susa"> <img src="../assets/img/shoebox42.1" alt= "carta susa 2">
+		<img src="../assets/img/shoebox42.png" alt= "sobre susa"> <img src="../assets/img/shoebox42.1.png" alt= "carta susa 2">
 		<img src="../assets/img/shoebox51.1.png" alt= "tarjeta nicolem leo"> 
-		<img src="../assets/img/shoebox51.2png" alt= "tarjeta nicolem leo 2">
+		<img src="../assets/img/shoebox51.2.png" alt= "tarjeta nicolem leo 2">
 		<img src="../assets/img/shoebox54.png" alt= "tarjeta navidad tata"> <img src="../assets/img/shoebox54.1.png" alt= "tarjeta navidad tata 2">
 		   </div>
+
+<div class="lightbox">
+	<span class="close-button">&times;</span>
+	<img src="" alt="">
+</div>
+
+ <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const lightbox = document.querySelector('.lightbox');
+            const lightboxImg = lightbox.querySelector('img');
+            const closeButton = lightbox.querySelector('.close-button');
+            
+            // Get all images in the container
+            const images = document.querySelectorAll('.image-container img');
+            
+            // Add click event to each image
+            images.forEach(img => {
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', () => {
+                    lightboxImg.src = img.src;
+                    lightboxImg.alt = img.alt;
+                    lightbox.classList.add('active');
+                });
+            });
+            
+            // Close lightbox when clicking close button
+            closeButton.addEventListener('click', () => {
+                lightbox.classList.remove('active');
+            });
+            
+            // Close lightbox when clicking outside the image
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    lightbox.classList.remove('active');
+                }
+            });
+            
+            // Close lightbox with Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    lightbox.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
+

@@ -8,8 +8,18 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden; 
-    font-family: "Director"; 
-    font-weight: lighter;
+    font-family: "Director";
+
+}
+
+h1, p{
+    text-align: right;
+    justify-content: center;
+    color: grey;
+
+}
+
+
 }
 .element-style {
     position: fixed;
@@ -21,19 +31,21 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1; /* Sends it behind other elements */
+    z-index: -1;
 }
 
 .image-container {
-    position: relative; /* Needed for positioning child images */
-    height: 100vh; /* Full viewport height */
-    width: 100vw; /* Full viewport width */
+    position: relative; 
+    height: 100vh; 
+    width: 100vw; 
 }
 
 .image-container img {
     position: absolute; 
     width: 200px; 
     height: auto; 
+    cursor: pointer;
+    transition: all 0.3s ease;
 
 }
 
@@ -83,7 +95,7 @@ body {
 .image-container img:nth-child(44) { top: 43%; left: 60%; transform: rotate(-11deg); }
 .image-container img:nth-child(45) { top: 98%; left: 30%; transform: rotate(23deg); }
 .image-container img:nth-child(46) { top: 48%; left: 75%; transform: rotate(-18deg); }
-.image-container img:nth-child(47) { top: 8%; left: 25%; transform: rotate(15deg); }
+.image-container img:nth-child(47) { top: 1%; left: 29%; transform: rotate(15deg); }
 .image-container img:nth-child(48) { top: 68%; left: 45%; transform: rotate(-25deg); }
 .image-container img:nth-child(49) { top: 28%; left: 90%; transform: rotate(12deg); }
 .image-container img:nth-child(50) { top: 88%; left: 20%; transform: rotate(-22deg); }
@@ -147,55 +159,52 @@ body {
 .image-container img:nth-child(108) { top: -3%; left: 2%; transform: rotate(8deg); } 
 
 
-.modal {
+.lightbox {
+
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-    display: flex;
-    align-items: center;
+    background: transparent;
+    z-index: 9999;
     justify-content: center;
-    z-index: 2000;
+    align-items: center;
 }
 
-.modal:target {
-    opacity: 1;
-    pointer-events: auto;
+.lightbox.active {
+    display: flex;
 }
 
-.modal-content {
+.lightbox img {
     max-width: 90%;
     max-height: 90vh;
-    position: relative;
-}
-
-.modal-content img {
-    max-width: 100%;
-    max-height: 90vh;
     object-fit: contain;
-    border: 2px solid white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
-.close-modal {
+.close-button {
     position: absolute;
-    top: -40px;
-    right: 0;
+    top: 20px;
+    right: 20px;
     color: white;
-    text-decoration: none;
     font-size: 30px;
-    font-weight: bold;
-}
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
 
-.close-modal:hover {
-    color: #ddd;
 }
-
+        
+        
+.close-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
 .image-container img:hover {
     transform: scale(1.2) rotate(0deg);
     z-index: 1000;
