@@ -17,7 +17,6 @@ h1, p{
     justify-content: center;
     color: grey;
 
-}
 
 
 }
@@ -158,6 +157,33 @@ h1, p{
 .image-container img:nth-child(107) { top: -5%; left: 4%; transform: rotate(40deg); } 
 .image-container img:nth-child(108) { top: -3%; left: 2%; transform: rotate(8deg); } 
 
+
+.archive-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    overflow: hidden;
+}
+
+.archive-container img {
+    width: calc(100vw / 10); 
+    height: calc(100vh / 10); 
+    object-fit: cover; 
+    transform-origin: center;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+
+.image-container, .archive-container img:hover {
+    transform: scale(1.2) rotate(0deg) !important;
+    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+}
 
 .lightbox {
 
