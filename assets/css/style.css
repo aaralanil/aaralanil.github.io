@@ -26,7 +26,7 @@ h1, p{
     left: 0;
     width: 100vw; 
     height: 100vh; 
-    background: url("../assets/img/cardboard_texture.jpg");
+    background: url("/assets/img/cardboard_texture.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -156,6 +156,12 @@ h1, p{
 .image-container img:nth-child(106) { top: 74%; left: 7%; transform: rotate(60deg); } 
 .image-container img:nth-child(107) { top: -5%; left: 4%; transform: rotate(40deg); } 
 .image-container img:nth-child(108) { top: -3%; left: 2%; transform: rotate(8deg); } 
+.image-container img:nth-child(109) { top: 1%; left: 102%; transform: rotate(45deg); }
+.image-container img:nth-child(110) { top: -3%; left: 78%; transform: rotate(8deg); }
+.image-container img:nth-child(111) { top: 80%; left: 64%; transform: rotate(8deg); }
+.image-container img:nth-child(112) { top: 67%; left: 57%; transform: rotate(16deg); }
+.image-container img:nth-child(113) { top: 13%; left: 27%; transform: rotate(8deg); z-index:-1 }
+.image-container img:nth-child(114) { top: -3%; left: 2%; transform: rotate(8deg); }
 
 
 .archive-container {
@@ -213,7 +219,7 @@ h1, p{
     position: absolute;
     top: 20px;
     right: 20px;
-    color: white;
+    color: black;
     font-size: 30px;
     cursor: pointer;
     background: rgba(0, 0, 0, 0.5);

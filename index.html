@@ -34,6 +34,7 @@
             left: 0;
             width: 100%;
             height: 100%;
+            cursor: pointer;
             background: rgba(0, 0, 0, 0);
             backdrop-filter: blur(3px);
             z-index: 9999;
@@ -72,9 +73,14 @@
 
 	<div> 
 		<h1>shoebox memories</h1>
-		<p> welcome to my webpage, a place for all trinkets, love letters, and memories collected in a shoebox somewhere in my room. maybe you have your own too. 
+		<p> welcome to my webpage, a place for all memories collected in a shoebox. do you have your own too? 
 		</p>
 	</div>
+
+
+
+
+
 
 <div class="element-style"></div>
 
@@ -167,9 +173,61 @@
 		<img src="/assets/img/shoebox51.1.png" alt= "tarjeta nicolem leo"> 
 		<img src="/assets/img/shoebox51.2.png" alt= "tarjeta nicolem leo 2">
 		<img src="/assets/img/shoebox54.png" alt= "tarjeta navidad tata"> <img src="/assets/img/shoebox54.1.png" alt= "tarjeta navidad tata 2">
-		   </div>
+		<img src="/assets/img/shoebox101.png" alt= "tatú corazon size">
+		<img src="/assets/img/shoebox102.png" alt= "original tatú corazón">
+		<img src="/assets/img/shoebox103.png" alt= "tiquete avión sp lisboa">
+		<img src="/assets/img/shoebox104.png" alt= "cuties mandarina brand tag">
+		<img src="/assets/img/shoebox105.png" alt= "österreich">
+		<img src="/assets/img/shoebox106.png" alt= "photoautomat berlin 2020">
+		<img src="/assets/img/shoebox107.png" alt= "brammi photoautomat clipping">
+		<img src="/assets/img/shoebox108.png" alt= "brammi photoautomat"> 
+		<img src="/assets/img/shoebox109.png" alt= "seoul mit juli und rafa">
+		<img src="/assets/img/shoebox1010.png" alt= "original tatú luna y gato">
+		<img src="/assets/img/shoebox1011.png" alt= "polaroid papi y lito">
+		<img src="/assets/img/shoebox1011.2.png" alt= "backside de polaroid con papi y lito">
+		<img src="/assets/img/shoebox1012.png" alt= "carta de cumpleaños de mi tia estrella">
+		<img src="/assets/img/shoebox1012.2.png" alt= "carta de cumpleaños de mi tia estrella 2">
+		<img src="/assets/img/shoebox1013.png" alt= "polaroid green con melissa">
+		<img src="/assets/img/shoebox1015.png" alt= "sneak preview con jenny">
+		<img src="/assets/img/shoebox1016.png" alt= "the substance con chiara">
+		<img src="/assets/img/shoebox1017.png"alt= "heretic con jenny">
+		<img src="/assets/img/shoebox1018.png" alt= "the outrun con chiara">
+		<img src="/assets/img/shoebox1019.png"alt= "photostrip con lu y sus papás">
+		<img src="/assets/img/shoebox1020.png"alt= "teletummies tag with address">
+		<img src="/assets/img/shoebox1021.png" alt= "seoul con juli">
+		<img src="/assets/img/shoebox1022.png"alt= "seoul con juli pt. 2">
+		<img src="/assets/img/shoebox1023.png"alt= "polaroid con emilio 2023">
+		<img src="/assets/img/shoebox1025.png" alt= "brammi photoautomat clipping 2">
+		<img src="/assets/img/shoebox1026.png" alt= "manchester train ticket">
+		<img src="/assets/img/shoebox1027.png" alt= "praça da arvore são paulo">
+		<img src="/assets/img/shoebox1029.png" alt= "pup concert ticket">
+		<img src="/assets/img/shoebox1030.png" alt= "spiritbox concert ticket">
+		<img src="/assets/img/shoebox1031.png" alt= "destroy boys concert ticket">
+		<img src="/assets/img/shoebox1032.png" alt= "mom jeans concert ticket">
+		<img src="/assets/img/shoebox1033.png" alt= "bring me the horizon concert ticket">
+		<img src="/assets/img/shoebox1034.png" alt= "liniker concert ticket selfprinted">
+		<img src="/assets/img/shoebox1035.png" alt= "rafa e eu selfprinted">
+		<img src="/assets/img/shoebox1036.png" alt= "pañuelo lowkey biohazard i should throw this out">
+		<img src="/assets/img/shoebox1037.png" alt= "dibujo tribal">
+		<img src="/assets/img/shoebox1038.png" alt= "carta annika">
+		<img src="/assets/img/shoebox1039.png" alt= "dominic fike concert ticket selfprinted">
+		<img src="/assets/img/shoebox1040.png" alt= "acuarela lu">
+		<img src="/assets/img/shoebox1041.png" alt= "pañuelo nosebleed 2 please dont judge me for keeping this">
+		<img src="/assets/img/shoebox1042.png" alt= "mary ellen mark berlin">
+		<img src="/assets/img/shoebox1043.png" alt= "que bom que você não foi embora ana e lia">
+		<img src="/assets/img/shoebox1044.png" alt= "individual crepes and waffles 1">
+		<img src="/assets/img/shoebox1045.png" alt= "individual crepes and waffles 2">
+		<img src="/assets/img/shoebox1046.png" alt= "individual crepes and waffles 3">
+		<img src="/assets/img/shoebox1047.png" alt= "selfie digital valeria y yo en österreich">
 
-<div class="lightbox">
+</div>
+
+
+
+
+
+
+    <div class="lightbox">
 	<span class="close-button">&times;</span>
 	<img src="" alt="">
 </div>
@@ -183,7 +241,6 @@
           
             const images = document.querySelectorAll('.image-container img');
             
-            // Add click event to each image
             images.forEach(img => {
                 img.style.cursor = 'pointer';
                 img.addEventListener('click', () => {
