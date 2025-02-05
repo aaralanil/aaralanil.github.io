@@ -12,6 +12,11 @@ body {
 
 }
 
+h1 {
+    font-size: 100pt;
+
+}
+
 h1, p{
     text-align: right;
     justify-content: center;
@@ -156,8 +161,8 @@ h1, p{
 .image-container img:nth-child(106) { top: 74%; left: 7%; transform: rotate(60deg); } 
 .image-container img:nth-child(107) { top: -5%; left: 4%; transform: rotate(40deg); } 
 .image-container img:nth-child(108) { top: -3%; left: 2%; transform: rotate(8deg); } 
-.image-container img:nth-child(109) { top: 1%; left: 102%; transform: rotate(45deg); }
-.image-container img:nth-child(110) { top: -3%; left: 78%; transform: rotate(8deg); }
+.image-container img:nth-child(109) { top: 1%; left: 100%; transform: rotate(45deg); }
+.image-container img:nth-child(110) { top: 1%; left: 78%; transform: rotate(8deg); z-index: -1}
 .image-container img:nth-child(111) { top: 80%; left: 64%; transform: rotate(8deg); }
 .image-container img:nth-child(112) { top: 67%; left: 57%; transform: rotate(16deg); }
 .image-container img:nth-child(113) { top: 13%; left: 27%; transform: rotate(8deg); z-index:-1 }
