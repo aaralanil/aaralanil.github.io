@@ -1,0 +1,358 @@
+---
+layout: layout.html
+about: archive
+---
+
+<style>
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0);
+            backdrop-filter: blur(3px);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90vh;
+            object-fit: contain;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
+        .close-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.5);
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            text-decoration: none;
+        }
+    </style>
+
+<div class="element-style"></div>
+
+   <div class="archive-container">
+    	<img src="/assets/img/probe2.png" alt= "rat says please be nice">
+		<img src="/assets/img/probe3.png" alt= "no chichi no problem">
+		<img src="/assets/img/probe4.png" alt= "jenny y yop">
+		<img src="/assets/img/probe5.png" alt= "deathmetal">
+		<img src="/assets/img/probe6.png" alt= "lengua de los sordomudos">
+		<img src="/assets/img/probe7.png" alt= "abaton">
+		<img src="/assets/img/probe8.png" alt= "t-mobilitat">
+		<img src="/assets/img/shoebox 1 2.png" alt= "mehdi">
+		<img src="/assets/img/shoebox 3 2.png" alt= "juan luis guerra">
+		<img src="/assets/img/shoebox 4 2.png" alt= "one direction">
+		<img src="/assets/img/shoebox 4.0.png" alt= "naty"> <img src="/assets/img/shoebox 4.1.png" alt= "naty 2">
+		<img src="/assets/img/shoebox 5 1.png" alt= "parabens lini">
+		<img src="/assets/img/shoebox 5 2.png" alt= "juli papel higienico">
+		<img src="/assets/img/shoebox 5 3.png" alt= "má e boa noticia">
+		<img src="/assets/img/shoebox 5 8.png" alt= "tata y yo">
+		<img src="/assets/img/shoebox 5 9.png" alt= "rafa tha e eu">
+		<img src="/assets/img/shoebox 5 11.png" alt= "nisa nathalie y kathleen">
+		<img src="/assets/img/shoebox 5 12.png" alt= "apolo bcn">
+		<img src="/assets/img/shoebox 5 14.png" alt= "tribal">
+		<img src="/assets/img/shoebox 5 21.png" alt= "arete de don peruano">
+		<img src="/assets/img/shoebox 5 22.png" alt= "las multitudes">
+		<img src="/assets/img/shoebox 5 23.png" alt= "problemista">
+		<img src="/assets/img/shoebox 5 24.png" alt= "iron claw">
+		<img src="/assets/img/shoebox 5 25.png" alt= "all of us strangers">
+		<img src="/assets/img/shoebox 5 26.png" alt= "challengers">
+		<img src="/assets/img/shoebox 5 27.png" alt= "longlegs">
+		<img src="/assets/img/shoebox 5 28.png" alt= "sem coracao">
+		<img src="/assets/img/shoebox 5 29.png" alt= "the holdovers">
+		<img src="/assets/img/shoebox 5 30.png" alt= "wicked">
+		<img src="/assets/img/shoebox 5 31.png" alt= "cuckoo">
+		<img src="/assets/img/shoebox 5 32.png" alt= "stickers">
+		<img src="/assets/img/shoebox 5 33.png" alt= "eddie">
+		<img src="/assets/img/shoebox 5 34.png" alt= "ratica">
+		<img src="/assets/img/shoebox 5 37.png" alt= "tata y yo en la guajira">
+		<img src="/assets/img/shoebox 5 38.png" alt= "papi y sus amigos">
+		<img src="/assets/img/shoebox 5 39.png" alt= "stickers nosotras">
+		<img src="/assets/img/shoebox 5 42.png" alt= "snow strippers">
+		<img src="/assets/img/shoebox 5 45.png" alt= "edyke">
+		<img src="/assets/img/shoebox 5.png" alt= "arife scan">
+		<img src="/assets/img/shoebox 6 1.png" alt= "selfie espejo abuelita">
+		<img src="/assets/img/shoebox 6 3.png" alt= "henry y susa">
+		<img src="/assets/img/shoebox 6 4.png" alt= "yo y abue comiendo helado">
+		<img src="/assets/img/shoebox 6 5.png" alt= "papi">
+		<img src="/assets/img/shoebox 6 6.png" alt= "yo en cementerio">
+		<img src="/assets/img/shoebox 6 7.png" alt= "yo en amherst">
+		<img src="/assets/img/shoebox 9.png" alt= "thank you lina">
+		<img src="/assets/img/shoebox 10 2.png" alt= "bodies">
+		<img src="/assets/img/shoebox 10.png" alt= "carta lau">
+		<img src="/assets/img/shoebox 11.png" alt= "thaynara">
+		<img src="/assets/img/shoebox 12.png" alt= "rolling stones">
+		<img src="/assets/img/shoebox 13.png" alt= "arife">
+		<img src="/assets/img/shoebox 18.png" alt= "rosi y tia">
+		<img src="/assets/img/shoebox 19.png" alt= "lina maria letra timoteo">
+		<img src="/assets/img/shoebox 20.png" alt= "naty a color">
+		<img src="/assets/img/shoebox 21.png" alt= "adita">
+		<img src="/assets/img/shoebox 22.png" alt= "brunno y juli">
+		<img src="/assets/img/shoebox 23.png" alt= "lali">
+		<img src="/assets/img/shoebox 25.0.png" alt= "werner y luz adriana 1"> <img src="/assets/img/shoebox 25.1.png" alt= "werner y luz adriana 2"> <img src="/assets/img/shoebox 25.2.png" alt= "werner y luz adriana 3">
+		<img src="/assets/img/shoebox 38.png" alt= "merry crisis melissa">
+		<img src="/assets/img/shoebox 40.png" alt= "bolsa con cartas">
+		<img src="/assets/img/shoebox 41.png" alt= "lina maria feliz cum">
+		<img src="/assets/img/shoebox 44.png" alt= "tu y yo en barcelona">
+		<img src="/assets/img/shoebox 46.png" alt= "brammi card">
+		<img src="/assets/img/shoebox 47.png" alt= "tata y yo nieve">
+		<img src="/assets/img/shoebox 48.png" alt= "im her mr">
+		<img src="/assets/img/shoebox 49.png" alt= "grado">
+		<img src="/assets/img/shoebox 50.png" alt= "sepia colegio">
+		<img src="/assets/img/shoebox 51.png" alt= "tata y yo bcn">
+		<img src="/assets/img/shoebox 52.png" alt= "colegio en luneburg">
+		<img src="/assets/img/shoebox 53.png" alt= "yo y rafa no face">
+		<img src="/assets/img/shoebox 54.1.png" alt= "carta anita 1"> <img src="/assets/img/shoebox 54.2.png" alt= "carta anita 2"> <img src="/assets/img/shoebox 54.3.png" alt= "carta anita 3"> <img src="/assets/img/shoebox 54.4.png" alt= "carta anita 4">
+		<img src="/assets/img/shoebox 55.png" alt= "cumple jason">
+		<img src="/assets/img/shoebox1.1.png" alt= "carta lara perez 1"> <img src="/assets/img/shoebox1.2.png" alt= "carta lara perez 2"> 
+		<img src="/assets/img/shoebox2.png" alt= "te hice un amiguito">
+		<img src="/assets/img/shoebox6.1.png" alt= "tarjeta mariana"> <img src="/assets/img/shoebox6.2.png" alt= "tarjeta mariana 2">
+		<img src="/assets/img/shoebox10.1.png" alt= "tarjeta nicolem"> <img src="/assets/img/shoebox10.2.png" alt= "tarjeta nicolem 2">
+		<img src="/assets/img/shoebox15.1.png" alt= "1er regalo"> <img src="/assets/img/shoebox15.2.png" alt= "2do regalo"> <img src="/assets/img/shoebox15.3.png" alt= "papi">
+		<img src="/assets/img/shoebox28.png" alt= "sobre rosa tia"> <img src="/assets/img/shoebox28.1.png" alt= "sobre rosa abierto tia"> <img src="/assets/img/shoebox28.2.png" alt= "carta tia"> <img src="/assets/img/shoebox28.3.png" alt= "carta tia 2">
+		<img src="/assets/img/shoebox33.1.png" alt= "moose mail"> <img src="/assets/img/shoebox33.0.png" alt= "moose mail 2">
+		<img src="/assets/img/shoebox35.png" alt= "mami"> <img src="/assets/img/shoebox35.1.png" alt= "mami 2">
+		<img src="/assets/img/shoebox36.png" alt= "teletummies"> <img src="/assets/img/shoebox38.1.png" alt= "teletummies 2"> <img src="/assets/img/shoebox38.2.png" alt= "teletummies stickers">
+		<img src="/assets/img/shoebox42.png" alt= "sobre susa"> <img src="/assets/img/shoebox42.1.png" alt= "carta susa 2">
+		<img src="/assets/img/shoebox51.1.png" alt= "tarjeta nicolem leo"> 
+		<img src="/assets/img/shoebox51.2.png" alt= "tarjeta nicolem leo 2">
+		<img src="/assets/img/shoebox54.png" alt= "tarjeta navidad tata"> <img src="/assets/img/shoebox54.1.png" alt= "tarjeta navidad tata 2">
+		<img src="/assets/img/shoebox101.png" alt= "tatú corazon size">
+		<img src="/assets/img/shoebox102.png" alt= "original tatú corazón">
+		<img src="/assets/img/shoebox103.png" alt= "tiquete avión sp lisboa">
+		<img src="/assets/img/shoebox104.png" alt= "cuties mandarina brand tag">
+		<img src="/assets/img/shoebox105.png" alt= "österreich">
+		<img src="/assets/img/shoebox106.png" alt= "photoautomat berlin 2020">
+		<img src="/assets/img/shoebox107.png" alt= "brammi photoautomat clipping">
+		<img src="/assets/img/shoebox108.png" alt= "brammi photoautomat"> 
+		<img src="/assets/img/shoebox109.png" alt= "seoul mit juli und rafa">
+		<img src="/assets/img/shoebox1010.png" alt= "original tatú luna y gato">
+		<img src="/assets/img/shoebox1011.png" alt= "polaroid papi y lito">
+		<img src="/assets/img/shoebox1011.2.png" alt= "backside de polaroid con papi y lito">
+		<img src="/assets/img/shoebox1012.png" alt= "carta de cumpleaños de mi tia estrella">
+		<img src="/assets/img/shoebox1012.2.png" alt= "carta de cumpleaños de mi tia estrella 2">
+		<img src="/assets/img/shoebox1013.png" alt= "polaroid green con melissa">
+		<img src="/assets/img/shoebox1015.png" alt= "sneak preview con jenny">
+		<img src="/assets/img/shoebox1016.png" alt= "the substance con chiara">
+		<img src="/assets/img/shoebox1017.png"alt= "heretic con jenny">
+		<img src="/assets/img/shoebox1018.png" alt= "the outrun con chiara">
+		<img src="/assets/img/shoebox1019.png"alt= "photostrip con lu y sus papás">
+		<img src="/assets/img/shoebox1020.png"alt= "teletummies tag with address">
+		<img src="/assets/img/shoebox1021.png" alt= "seoul con juli">
+		<img src="/assets/img/shoebox1022.png"alt= "seoul con juli pt. 2">
+		<img src="/assets/img/shoebox1023.png"alt= "polaroid con emilio 2023">
+		<img src="/assets/img/shoebox1025.png" alt= "brammi photoautomat clipping 2">
+		<img src="/assets/img/shoebox1026.png" alt= "manchester train ticket">
+		<img src="/assets/img/shoebox1027.png" alt= "praça da arvore são paulo">
+		<img src="/assets/img/shoebox1029.png" alt= "pup concert ticket">
+		<img src="/assets/img/shoebox1030.png" alt= "spiritbox concert ticket">
+		<img src="/assets/img/shoebox1031.png" alt= "destroy boys concert ticket">
+		<img src="/assets/img/shoebox1032.png" alt= "mom jeans concert ticket">
+		<img src="/assets/img/shoebox1033.png" alt= "bring me the horizon concert ticket">
+		<img src="/assets/img/shoebox1034.png" alt= "liniker concert ticket selfprinted">
+		<img src="/assets/img/shoebox1035.png" alt= "rafa e eu selfprinted">
+		<img src="/assets/img/shoebox1036.png" alt= "pañuelo lowkey biohazard i should throw this out">
+		<img src="/assets/img/shoebox1037.png" alt= "dibujo tribal">
+		<img src="/assets/img/shoebox1038.png" alt= "carta annika">
+		<img src="/assets/img/shoebox1039.png" alt= "dominic fike concert ticket selfprinted">
+		<img src="/assets/img/shoebox1040.png" alt= "acuarela lu">
+		<img src="/assets/img/shoebox1041.png" alt= "pañuelo nosebleed 2 please dont judge me for keeping this">
+		<img src="/assets/img/shoebox1042.png" alt= "mary ellen mark berlin">
+		<img src="/assets/img/shoebox1043.png" alt= "que bom que você não foi embora ana e lia">
+		<img src="/assets/img/shoebox1044.png" alt= "individual crepes and waffles 1">
+		<img src="/assets/img/shoebox1045.png" alt= "individual crepes and waffles 2">
+		<img src="/assets/img/shoebox1046.png" alt= "individual crepes and waffles 3">
+		<img src="/assets/img/shoebox1047.png" alt= "selfie digital valeria y yo en österreich">
+		   </div>
+
+
+
+
+   <div class="lightbox">
+	<span class="close-button">&times;</span>
+	<img src="" alt="">
+
+</div>
+
+ <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const lightbox = document.querySelector('.lightbox');
+            const lightboxImg = lightbox.querySelector('img');
+            const closeButton = lightbox.querySelector('.close-button');
+            
+          
+            const images = document.querySelectorAll('.archive-container img');
+            
+            // Add click event to each image
+            images.forEach(img => {
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', () => {
+                    lightboxImg.src = img.src;
+                    lightboxImg.alt = img.alt;
+                    lightbox.classList.add('active');
+                });
+            });
+            
+            // Close lightbox when clicking close button
+            closeButton.addEventListener('click', () => {
+                lightbox.classList.remove('active');
+            });
+            
+            // Close lightbox when clicking outside the image
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    lightbox.classList.remove('active');
+                }
+            });
+            
+            // Close lightbox with Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    lightbox.classList.remove('active');
+                }
+            });
+        });
+    </script>
+
+<div class="filter-controls">
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search descriptions..." class="search-input">
+  </div>
+  
+  <div class="filter-selects">
+    <select id="yearFilter" class="filter-select">
+      <option value="">All Years</option>
+      <option value="2024">2024</option>
+      <option value="2023">2023</option>
+      <option value="2022">2022</option>
+      <option value="2021">2021</option>
+      <option value="2020">2020</option>
+      <option value="2019">2019</option>
+      <option value="2018">2018</option>
+      <option value="2017">2017</option>
+      <option value="2016">2016</option>
+      <
+    </select>
+
+    
+   <select id="locationFilter" class="filter-select">
+      <option value="">All Locations</option>
+      <option value="barcelona">Barcelona</option>
+      <option value="berlin">Berlin</option>
+      <option value="Hamburg">Hamburg</option>
+      <option value="colombia">Colombia</option>
+      <option value="brasil">Brasil</option>
+      <option value="Barranquilla">Barranquilla</option>
+      <option value="united states">United States</option>
+    </select>
+  </div>
+</div>
+
+<div class="archive-container">
+  {% raw %}
+  {% for image in collections.image %}
+    <div class="image-item" 
+         data-date="{{ image.date | dateYear }}"
+         data-location="{{ image.data.location }}"
+         data-description="{{ image.fileSlug }}">
+      <img src="/assets/img/{{ image.fileSlug }}.png" 
+           alt="{{ image.fileSlug | replace('-', ' ') }}"
+           loading="lazy">
+    </div>
+  {% endfor %}
+  {% endraw %}
+</div>
+
+<style>
+.filter-controls {
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.search-box {
+  flex: 1;
+  min-width: 200px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.filter-selects {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-width: 150px;
+}
+
+.image-item {
+  transition: opacity 0.3s ease;
+}
+
+.image-item.hidden {
+  display: none;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('searchInput');
+  const yearFilter = document.getElementById('yearFilter');
+  const locationFilter = document.getElementById('locationFilter');
+  const images = document.querySelectorAll('.image-item');
+
+  function filterImages() {
+    const searchTerm = searchInput.value.toLowerCase();
+    const selectedYear = yearFilter.value;
+    const selectedLocation = locationFilter.value;
+
+    images.forEach(image => {
+      const description = image.dataset.description.toLowerCase();
+      const date = image.dataset.date;
+      const location = image.dataset.location.toLowerCase();
+
+      const matchesSearch = description.includes(searchTerm);
+      const matchesYear = !selectedYear || date.includes(selectedYear);
+      const matchesLocation = !selectedLocation || location.includes(selectedLocation);
+
+      if (matchesSearch && matchesYear && matchesLocation) {
+        image.classList.remove('hidden');
+      } else {
+        image.classList.add('hidden');
+      }
+    });
+  }
+
+  searchInput.addEventListener('input', filterImages);
+  yearFilter.addEventListener('change', filterImages);
+  locationFilter.addEventListener('change', filterImages);
+});
+</script>

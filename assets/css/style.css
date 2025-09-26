@@ -4,13 +4,20 @@
 
 }
 
-body {
+body{
     margin: 0;
     padding: 0;
     overflow: hidden; 
     font-family: "Director";
+    bounds: "#bounds"
 
 }
+
+a{
+    text-decoration: none;
+    color:grey;
+}
+    
 
 h1 {
     font-size: 100pt;
@@ -21,8 +28,10 @@ h1, p{
     text-align: right;
     justify-content: center;
     color: grey;
+}
 
-
+p{
+   text-align: left;
 
 }
 .element-style {
@@ -31,11 +40,11 @@ h1, p{
     left: 0;
     width: 100vw; 
     height: 100vh; 
-    background: url("/assets/img/cardboard_texture.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
+
 }
 
 .image-container {
@@ -159,14 +168,55 @@ h1, p{
 .image-container img:nth-child(104) { top: 5%; left: -2%; transform: rotate(-60deg); } 
 .image-container img:nth-child(105) { top: 2%; left: -1%; transform: rotate(-20deg); } 
 .image-container img:nth-child(106) { top: 74%; left: 7%; transform: rotate(60deg); } 
-.image-container img:nth-child(107) { top: -5%; left: 4%; transform: rotate(40deg); } 
+.image-container img:nth-child(107) { top: -2%; left: 4%; transform: rotate(40deg); } 
 .image-container img:nth-child(108) { top: -3%; left: 2%; transform: rotate(8deg); } 
 .image-container img:nth-child(109) { top: 1%; left: 100%; transform: rotate(45deg); }
 .image-container img:nth-child(110) { top: 1%; left: 78%; transform: rotate(8deg); z-index: -1}
 .image-container img:nth-child(111) { top: 80%; left: 64%; transform: rotate(8deg); }
 .image-container img:nth-child(112) { top: 67%; left: 57%; transform: rotate(16deg); }
 .image-container img:nth-child(113) { top: 13%; left: 27%; transform: rotate(8deg); z-index:-1 }
-.image-container img:nth-child(114) { top: -3%; left: 2%; transform: rotate(8deg); }
+.image-container img:nth-child(114) { top: -1%; left: 2%; transform: rotate(8deg); }
+.image-container img:nth-child(115) { top: 0%; left: 0%; transform: rotate(-10deg); }
+.image-container img:nth-child(116) { top: 57%; left: 53%; transform: rotate(8deg); }
+.image-container img:nth-child(117) { top: 78%; left: -3%; transform: rotate(8deg); }
+.image-container img:nth-child(118) { top: 3%; left: 10%; transform: rotate(8deg); z-index: -1}
+.image-container img:nth-child(119) { top: 3%; left: 97%; transform: rotate(8deg); }
+.image-container img:nth-child(120) { top: 40%; left: 58%; transform: rotate(-15deg); z-index: -1}
+.image-container img:nth-child(121) { top: 40%; left: 58%; transform: rotate(-15deg);}
+.image-container img:nth-child(122) { top: 6%; left: 69%; transform: rotate(-10deg); z-index: -1}
+.image-container img:nth-child(123) { top: 60%; left: 87%; transform: rotate(-10deg); z-index: -1}
+.image-container img:nth-child(124) { top: 2%; left: 89%; transform: rotate(-10deg); z-index: -1}
+.image-container img:nth-child(125) { top: 3%; left: 27%; transform: rotate(-10deg); z-index: -1}
+.image-container img:nth-child(126) { top: 6%; left: 22%; transform: rotate(20deg); z-index: -1}
+.image-container img:nth-child(127) { top: -3%; left: 1%; transform: rotate(-10deg); }
+.image-container img:nth-child(128) { top: 6%; left: 22%; transform: rotate(-10deg); z-index: -1}
+.image-container img:nth-child(129) { top: 47%; left: -10%; transform: rotate(60deg); }
+.image-container img:nth-child(130) { top: 6%; left: 22%; transform: rotate(-10deg); }
+.image-container img:nth-child(131) { top: 6%; left: 22%; transform: rotate(-20deg); }
+.image-container img:nth-child(132) { top: 3%; left: 69%; transform: rotate(-10deg); z-index: -1}
+.image-container img:nth-child(133) { top: 6%; left: 41%; transform: rotate(20deg); }
+.image-container img:nth-child(134) { top: 18%; left: 78%; transform: rotate(8deg); }
+.image-container img:nth-child(135) { top: 20%; left: 48%; transform: rotate(-30deg); }
+.image-container img:nth-child(136) { top: 38%; left: 98%; transform: rotate(-20deg); }
+.image-container img:nth-child(137) { top: 68%; left: 18%; transform: rotate(-50deg); }
+.image-container img:nth-child(138) { top: 38%; left: 98%; transform: rotate(-20deg); }
+.image-container img:nth-child(139) { top: 38%; left: 98%; transform: rotate(-20deg); }
+.image-container img:nth-child(140) { top: 38%; left: 98%; transform: rotate(-20deg); }
+.image-container img:nth-child(141) { top: 38%; left: 98%; transform: rotate(-20deg); }
+.image-container img:nth-child(142) { top: 38%; left: 98%; transform: rotate(-20deg); }
+.image-container img:nth-child(143) { top: 38%; left: 98%; transform: rotate(-20deg); }
+.image-container img:nth-child(144) { top: 38%; left: 98%; transform: rotate(-20deg); }
+.image-container img:nth-child(145) { top: 38%; left: 98%; transform: rotate(-20deg); }
+.image-container img:nth-child(146) { top: 38%; left: 98%; transform: rotate(-20deg); }
+.image-container img:nth-child(147) { top: 38%; left: 98%; transform: rotate(-20deg); }
+.image-container img:nth-child(148) { top: 38%; left: 98%; transform: rotate(-20deg); }
+.image-container img:nth-child(149) { top: 38%; left: 98%; transform: rotate(-20deg); }
+.image-container img:nth-child(150) { top: 38%; left: 1%; transform: rotate(-20deg); z-index: -1}
+.image-container img:nth-child(151) { top: 35%; left: 98%; transform: rotate(-24deg); }
+
+
+
+
 
 
 .archive-container {
@@ -188,8 +238,8 @@ h1, p{
 
 .image-container img:hover,
 .archive-container img:hover {
-    transform: scale(1.2) rotate(0deg) !important;
-    z-index: 1000;
+    /*transform: scale(1.2) rotate(0deg) !important;
+    z-index: 1000;*/
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 
 }

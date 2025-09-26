@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/assets/css/fonts.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-	<title>shoebox memories</title>
-</head>
-<body>
-
-	<nav>
-  <a href="/">shoebox</a>
-  <a href="/archive/">archive</a>
-  <a href="/about/">about</a>
-</nav>
-
-
+---
+layout: layout.html
+---
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,14 +12,21 @@
 	
 
 	<div> 
-		<h1>shoebox memories</h1>
-		<p> welcome to my webpage, a place for all memories collected in a shoebox. do you have your own too? 
+		<h1>{{ title | default: "shoebox memories" }}</h1>
+
 		</p>
 	</div>
 
 
 
+{% for image in collection.images %}
 
+[rat says please be nice](/assets/img/probe2.jpg)
+
+
+
+
+{% endfor %}
 
 
 <div class="element-style"></div>
@@ -73,13 +65,10 @@
 		<img src="/assets/img/shoebox 5 32.jpg" alt= "stickers">
 		<img src="/assets/img/shoebox 5 33.jpg" alt= "eddie">
 		<img src="/assets/img/shoebox 5 34.jpg" alt= "ratica">
-		<img src="/assets/img/shoebox 5 35.jpg" alt= "bolsa de stickers">
-		<img src="/assets/img/shoebox 5 36.jpg" alt= "fotowelt">
 		<img src="/assets/img/shoebox 5 37.jpg" alt= "tata y yo en la guajira">
 		<img src="/assets/img/shoebox 5 38.jpg" alt= "papi y sus amigos">
 		<img src="/assets/img/shoebox 5 39.jpg" alt= "stickers nosotras">
 		<img src="/assets/img/shoebox 5 42.jpg" alt= "snow strippers">
-		<img src="/assets/img/shoebox 5 44.jpg" alt= "rollitos">
 		<img src="/assets/img/shoebox 5 45.jpg" alt= "edyke">
 		<img src="/assets/img/shoebox 5.jpg" alt= "arife scan">
 		<img src="/assets/img/shoebox 6 1.jpg" alt= "selfie espejo abuelita">
@@ -123,7 +112,8 @@
 		<img src="/assets/img/shoebox28.jpg" alt= "sobre rosa tia"> <img src="/assets/img/shoebox28.1.jpg" alt= "sobre rosa abierto tia"> <img src="/assets/img/shoebox28.2.jpg" alt= "carta tia"> <img src="/assets/img/shoebox28.3.jpg" alt= "carta tia 2">
 		<img src="/assets/img/shoebox33.1.jpg" alt= "moose mail"> <img src="/assets/img/shoebox33.0.jpg" alt= "moose mail 2">
 		<img src="/assets/img/shoebox35.jpg" alt= "mami"> <img src="/assets/img/shoebox35.1.jpg" alt= "mami 2">
-		<img src="/assets/img/shoebox36.jpg" alt= "teletummies"> <img src="/assets/img/shoebox38.1.jpg" alt= "teletummies 2"> <img src="/assets/img/shoebox38.2.jpg" alt= "teletummies stickers">
+		<img src="/assets/img/shoebox36.jpg" alt= "teletummies"> <img src="/assets/img/shoebox38.1.jpg" alt= "teletummies 2"> 
+		<img src="/assets/img/shoebox38.2.jpg" alt= "teletummies stickers">
 		<img src="/assets/img/shoebox42.jpg" alt= "sobre susa"> <img src="/assets/img/shoebox42.1.jpg" alt= "carta susa 2">
 		<img src="/assets/img/shoebox51.1.jpg" alt= "tarjeta nicolem leo"> 
 		<img src="/assets/img/shoebox51.2.jpg" alt= "tarjeta nicolem leo 2">
@@ -225,11 +215,22 @@
             });
         });
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/InertiaPlugin.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        gsap.registerPlugin(Draggable, InertiaPlugin);
+        Draggable.create(".image-container img", {
+          inertia: true,
+          zIndexBoost: true,
+        });
+      });
+    </script>
+
 </body>
+
+
 </html>
-
-
-	
-
-
-

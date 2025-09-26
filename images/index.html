@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/assets/css/fonts.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-	<title>shoebox memories</title>
-</head>
-<body>
-
-	<nav>
-  <a href="/">shoebox</a>
-  <a href="/archive/">archive</a>
-  <a href="/about/">about</a>
-</nav>
-
-
+---
+layout: layout.html
+---
 
 <!DOCTYPE html>
 <html lang="en">
@@ -72,14 +57,21 @@
 <body>
 
 	<div> 
-		<h1>shoebox memories</h1>
+		<h1>{{ title | default: "shoebox memories" }}</h1>
 		<p> welcome to my webpage, a place for all trinkets, love letters, and memories collected in a shoebox somewhere in my room. maybe you have your own too. 
 		</p>
 	</div>
 
 
 
+{% for image in collection.images %}
 
+[rat says please be nice](/assets/img/probe2.png)
+
+
+
+
+{% endfor %}
 
 
 <div class="element-style"></div>
@@ -272,9 +264,3 @@
     </script>
 </body>
 </html>
-
-
-	
-
-
-

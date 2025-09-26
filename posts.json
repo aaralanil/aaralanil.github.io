@@ -1,0 +1,11 @@
+{
+	"layout": "layout.html",
+  "tags": "image",
+  "eleventyComputed": {
+    "imageData": {
+      "path": "{% raw %}{{ page.fileSlug }}{% endraw %}",
+      "date": "{% raw %}{{ page.date }}{% endraw %}",
+      "location": ""
+    }
+  }
+}
