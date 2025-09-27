@@ -21,21 +21,15 @@ jobs:
         with:
           node-version: "18"
           
-      - name: Persist npm cache
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
-          
       - name: Persist Eleventy .cache
         uses: actions/cache@v3
         with:
           path: ./.cache
           key: ${{ runner.os }}-eleventy-fetch-cache
           
-      - run: npm install
-      - run: npm run build-ghpages
-      
+      - name: Build site with Eleventy
+        run: npx @11ty/eleventy --pathprefix=/your-repo-name/
+        
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
